@@ -1,0 +1,322 @@
+body { font-family: Verdana; }
+header { 
+ text-align: right;
+ left: 0;
+ top: 0;
+ right: 0;
+ }
+p { font-size: 14pt; }
+ul {
+ font-size: 14pt;
+ list-style-type: square;
+}
+.picture { text-align: center;
+}
+p.greeting { font-size: 24pt;
+}
+address{
+}
+strong{
+    font-style: italic;
+}
+.advertising { margin-left :30pt; }
+footer{
+    text-align: right;
+    left: 0pt;
+    right: 0pt;
+    bottom: 0pt;
+}
+.old-style-time {
+  font-variant-numeric: oldstyle-nums;
+  font-size: larger;
+}
+table.price-list th, table.price-list td { 
+  border: grey thin solid;
+  padding: 4pt;
+}
+table.catalog td {
+  border-bottom: black thin dotted;
+  padding: 3pt;
+}
+table.catalog img { width: 200px; }
+thead {
+  background-color: rgb(167, 202, 202);
+  color: white;
+} 
+tfoot {
+  font-style: italic;
+  text-align: right;
+}
+td, th {
+  padding: 8px 12px;
+}
+nav {
+     background-color: rgb(165, 220, 211);
+     width: 200px;
+     padding: 20px;
+     display: table-cell;
+     left: 10pt;
+     top: 150pt;
+     bottom: 100pt;
+}
+nav div, nav a {
+    font-size: 24pt;
+    margin: 10px 0px;
+}
+main {
+     display: table-cell;
+     padding-left: 20pt;
+     left: 240pt;
+ top: 150pt;
+ right: 0;
+ bottom: 100pt;
+ overflow-y: auto;
+}
+table.catalog tr:last-child td {
+ border-bottom: none;
+}
+table.price-list th[colspan=2] {
+ text-align: center;
+}
+table.catalog h3 + p::first-letter {
+ font-size: 150%;
+ background-color: rgb(243, 212, 244);
+}
+ul li::marker {
+ font-size: 150%;
+ color: rgb(216, 170, 188);
+}
+td:last-child:not(td:only-child) {
+    background-color: rgb(232, 239, 239);
+    border: none;
+}
+td[rowspan] {
+    font-size: larger;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('fonts/CaviarDreams.woff');
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url(fonts/Caviar_Dreams_Bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url(fonts/CaviarDreams_Italic.woff);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url(fonts/CaviarDreams_BoldItalic.woff);
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+main h1 {
+    font-size: 28pt;
+    text-transform: uppercase;
+    text-align: left;
+}
+table.catalog h3 {
+    font-family: 'Caviar Dreams';
+    font-size: 32pt;
+    font-variant-caps: all-small-caps;
+}
+table.catalog h3::after {
+    content: ":";
+}
+table.catalog p::first-letter {
+    font-size: 2em;
+    vertical-align: top;
+}
+table.catalog td, table.catalog p {
+    background: none;
+}
+header h1.header1 {
+    font: bold 48pt 'Caviar Dreams';
+    text-transform: uppercase;
+    letter-spacing: 18pt;
+    background-color: rgb(246, 208, 240);
+    margin: 0;
+    padding: 12pt 8pt 0 0;
+    border-bottom: 12pt solid rgb(158, 223, 225);
+}
+header h1.header2 {
+    font: 36pt Verdana;
+    letter-spacing: 8pt;
+    margin: 0;
+    padding: 0 36pt 0 0;
+}
+div.container {
+ min-width: 768px;
+ max-width: 1024px;
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+}
+.address {
+    font-family: 'Caviar Dreams';
+    font-style: italic;      
+    font-weight: bold;       
+    font-size: 20pt;        
+    background-color: rgb(240, 209, 244); 
+    border-bottom: 3px solid rgb(58, 234, 234);  
+    text-align: right;       
+    padding: 10px 20px;      
+    margin: 0;               
+}
+.copyright {
+    text-align: right;       
+    font-size: 12pt;
+    padding-bottom: 40px;    
+    margin: 0;
+}
+.roman-list li::marker {
+    color: rgb(175, 252, 244);
+}
+.roman-list li::marker {
+    color: rgb(176, 250, 245);
+}
+.roman-list li::marker {
+    color: rgb(174, 249, 248);
+}
+nav a {
+ color: rgb(242, 166, 237);
+ text-decoration: none;
+ display: block;
+ transition-property: color, background-color, translate;
+ transition-duration: 1.5s, 1.5s, 2s;
+ transition-delay: .5s, .5s, 0;
+}
+nav a:active, nav a:hover {
+ color: blanchedalmond;
+ background-color: rgb(247, 180, 232);
+ translate: 10px;
+ transition-property: color, background-color, translate;
+ transition-duration: 1s;
+}
+form {
+ width: min-content;
+ padding: 0 10pt;
+ margin-bottom: 10pt;
+ border: thin dotted rgb(250, 205, 236);
+ border-radius: 5pt;
+}
+input, select, textarea {
+ font: 12pt monospace;
+ border: medium solid rgb(68, 215, 198);
+ border-radius: 5pt;
+ padding: 5pt;
+}
+input:required + span::after, select:required + span::after {
+ font: 24pt monospace;
+ content: '*';
+vertical-align: top;
+}
+input:user-valid, select:user-valid {
+ border-color: green;
+}
+input:user-invalid, select:user-invalid {
+ border-color: red;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.2ex; 
+    height: 1.2ex;
+    border: 2px solid rgb(239, 176, 215); 
+    border-radius: 0;
+    background-color: transparent;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: rgb(149, 249, 249);
+}
+input[type="radio"] {
+    border-radius: 50%;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+body {
+  background-image:
+      repeating-linear-gradient(45deg, rgb(204, 164, 207), blanchedalmond 1mm);
+      width: 100vw;
+ height: 100vh;
+}
+div.container {
+ background-color: rgba(255, 255, 255, 0.8);
+ height: 100%;
+}
+header h1.header1 {
+ background-color: blanchedalmond;
+background:
+ padding-box padding-box url(../images/sushi.jpg)
+ left / auto 80% no-repeat,
+ padding-box padding-box url(../images/rolls.png)
+ 160px / auto 80% no-repeat,
+ radial-gradient(circle farthest-side at right,
+ rgb(245, 249, 190), rgb(255, 205, 231) 67%,
+ white 90%);
+}
+.mate {
+    display: block;
+    margin-top: 20px;
+    width: 150px;
+}
+.mate {
+  margin: 20px 0 35px 40px;
+}
+.table {
+ display: table;
+ border-collapse: collapse;
+ width: 100%;
+}
+.row { display: table-row; }
+@media screen and (max-width: 400px) {
+    header h1.header1 {
+        font: bold 42pt 'Caviar Dreams';
+        letter-spacing: initial;
+        background:
+            radial-gradient(circle farthest-side at right,
+                             blanchedalmond, blanchedalmond 67%,
+                             white 90%);
+}
+ header h1.header2 {
+ font: 32pt Verdana;
+ letter-spacing: initial;
+ }
+    nav {
+        float: none;
+        width: initial;
+        margin: initial;
+        border-radius: initial;
+    }
+    main {
+        margin-left: initial;
+        min-height: initial;
+        div.container {
+            min-width: initial;
+            max-width: initial;
+            width: 100vw;
+            background: rgba(255, 255, 255, 0.8);
+            table.catalog, table.catalog tr, table.catalog tr td {
+                display: block;
+ }
+             table.catalog tr td:first-of-type {
+                 width: initial;
+ }
+         }
+    }
+}

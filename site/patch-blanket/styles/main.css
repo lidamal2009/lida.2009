@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    width: 100vw;
+     height: 100vh;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.container {
+    width: 1000px;
+    height: 600px;
+    border: thin solid black;
+    position: relative;
+}
+.patch1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: greenyellow;
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+}
+.patch2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background-color: coral;
+    clip-path: polygon(0 100%, 100px 0, 100% 100%, 0 100%);
+}
+.patch3 {
+    position: absolute;
+    left: 100px;
+ top: 0;
+ bottom: 0;
+ width: 600px;
+ background-color: gold;
+ clip-path: polygon(200px 0, 0 400px, 100% 534px, 500px 0,
+ 200px 0);
+}
+.patch4 {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ width: 400px;
+ background-color: aquamarine;
+ clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 534px, 0 0);
+}
+header {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 620px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30pt;
+    clip-path: path('M 30 0 L 100 30 200 0 400 40 C 800 0 800 260 400 240 L 300 220 100 230 30 230 50 150 Z');
+}
+header h1 {
+    font: bold 48pt sans-serif;
+    margin: 0;
+    padding: 10pt;
+}
+header h2 {
+    font: bold italic 36pt sans-serif;
+    margin: 0;
+    padding: 10pt;
+}
+.price {
+    position: absolute; 
+    bottom: 20px;       
+    left: 20px;         
+    padding: 10px 25px;
+    background-color: #3b3b98; 
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+}
+

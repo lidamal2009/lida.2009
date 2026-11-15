@@ -1,0 +1,130 @@
+body { margin: 0; }
+.container {
+ min-width: 800px;
+ max-width: 1000px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-rows: 20pt min-content;
+ grid-template-columns: 10pt 40pt 240pt 40pt 1fr 40pt 240pt 40pt
+ 10pt;
+ grid-auto-rows: min
+}
+header {
+    grid-row: 2 / 3;
+    grid-column: 2 / 9;
+    font-family: Exo2;
+    text-align: right;
+    background: no-repeat url(../images/kids.jpg)
+                          30pt center / 140pt auto,
+                linear-gradient(to left, yellow 0, yellow 500pt,
+                                                      white 100%);
+}
+heading2
+.heading1, .heading2 {
+ margin: 0;
+ font-size: 36pt;
+ font-weight: bold;
+}
+.heading1 {
+ letter-spacing: 12pt;
+ margin-left: calc(100% - 290pt);
+ margin-right: 8pt;
+ padding: 10pt 20pt 0 0;
+ border-bottom: thick solid brown;
+ transform: skewX(15deg) scaleX(1.8);
+ transform-origin: right;
+}
+heading2 {
+ padding: 0 20pt 10pt 0;
+ transform: skewX(-15deg);
+}
+.heading h2 {
+ font: bold 28pt Exo2;
+ text-align: center;
+ margin: 0;
+ padding: 10pt;
+}
+.good1-heading {
+ grid-row: 3 / 4;
+ grid-column: 2 / 5;
+ background-color: greenyellow;
+}
+.good1-left {
+ grid-row: 4 / 5;
+ grid-column: 2 / 3;
+ background-color: orange;
+}
+.image {
+ display: block;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.good1-right {
+ grid-row: 4 / 5;
+ grid-column: 4 / 5;
+ background-color: orange;
+}
+.good1-center {
+    grid-row: 4 / 5 ;
+    grid-column: 3 / 4 ;
+}
+.footing {
+ font: bold italic 24pt Exo2;
+ text-align: right;
+ margin: 0;
+ padding: 6pt;
+}
+.good1-footing {
+ grid-row: 5 / 6;
+ grid-column: 2 / 5;
+ background-color: cyan;
+}
+.row-gap {
+  grid-row: 6 / 7;
+  height: 40px;
+}
+.good3-heading {
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+  background-color: darkblue;
+  color: white;
+}
+.good3-left {
+  grid-row: 8 / 9;
+  grid-column: 2 / 3;
+  background-color: orangered;
+}
+.good3-center {
+  grid-row: 8 / 9;
+  grid-column: 3 / 4;
+  display: flex;
+}
+.good3-right {
+  grid-row: 8 / 9;
+  grid-column: 4 / 5;
+  background-color: orangered;
+}
+.good3-footing {
+  grid-row: 9 / 10;
+  grid-column: 2 / 5;
+  background-color: mediumorchid;
+}
+.good4-heading {
+  grid-row: 7 / 8;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-width: 300px;
+  object-fit: cover;
+}
+.product {
+  width: 300px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}

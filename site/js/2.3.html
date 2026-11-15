@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Подсвечивающаяся картинка</title>
+        <style>
+            img {
+                opacity: 0.3;
+            }
+            img.hovered {
+                opacity: 1.0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img id="interactive" src="images/may.jpg">
+        </div>
+        <script>
+            const interactive =
+                document.getElementById('interactive');//
+            function onInteractiveMouseOver(){
+                interactive.classList.add('hovered');
+            }
+            function onInteractiveMouseOut () {
+                interactive.classList.remove('hovered');
+            }
+            interactive.addEventListener ('mouseover',
+                                         onInteractiveMouseOver);
+            interactive.addEventListener ('mouseout',
+                                        onInteractiveMouseOut);
+        </script>
+    </body>
+</html>

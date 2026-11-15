@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Йокогама: суши-бар</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>       
+    <header>
+        <div class="content">
+        <h1 class="header1">Йокогама</h1>
+        <h1 class="header2">Суши-бар</h1>
+        </div>
+    </header>
+    <nav>
+        <div><a href="../index.html">главная</a></div>
+        <div><a href="sashimi.html">сашами</a></div>
+        <div><a href="sushi.html">суши</a></div>
+        <div><a href="rolls.html">роллы</a></div>
+        <div><a href="price-list.html">прайс-лист</a></div>
+        <div>заказ</div>
+    </nav>
+        <main>
+            <h2>Заказ блюд</h2>
+            <form action="mailto:order@yokogama.ru" method="post"
+                  enctype="text/plain">
+                  <p>
+                     <label for="name">Как к вам обращаться?</label><br>
+                     <input name="name" id="name" required>
+                     <span></span>
+                  </p>
+                  <p>
+                      <label for="dishes">что желает заказать?</label><br>
+                      <select name="dishes" id="dishes" size="6" multiple
+                      required>
+                          <optgroup label="суши">
+                              <option value="chukka">чукка</option>
+                              <option value="maguro">магуро</option>
+                              <option value="tobiko">тобико</option>
+                          </optgroup>
+                          <optgroup label="Сашими">
+                              <option value="unagi">унаги</option>
+                              <option value="hamachi">хамачи</option>
+                          </optgroup>
+                          <optgroup label="Роллы">
+                              <option value="california">Калифорния</option>
+                              <option value="philadelphia">Филадельфия</option>
+                              <option value="unagi_maki">Унаги маки</option>
+                         </optgroup>
+                        </select>
+                        <span></span>
+                   </p>
+                   <p>
+                    <label for="phone">ваш телефон:</label><br>
+                    <input type="tel"  name="phone" id="phone" required>
+                    <span></span>
+                   </p>
+                    <p>
+                 <fieldset>
+                    <legend>Дополнительно</legend>
+                       упаковка:<br>
+                    <input type="radio" name="package" id="package1"
+                           value="standard" checked>
+                    <label for="package1">стандартная</label><br>
+                    <input type="radio" name="package" id="package2"
+                    value="gift">
+                    <label for="package2">подарочная</label><br>
+                    <input type="radio" name="package" id="package3" value="eco">
+                    <label for="package3">экологически чистая</label>
+                    </p>
+                    <p>
+                       <label>
+                     <input type="checkbox" name="urgent">
+                            Срочный заказ
+                      </label>
+                    </p>
+                    <p>
+                    <label for="addenda">Примечания:</label>
+                    <textarea id="addenda" name="addenda" rows="4" cols="30"></textarea>
+                    </p>
+                    <fieldset></fieldset>
+                    <p>
+                    <button type="submit" 
+                    style="padding: 10px 20px; font-size:
+                    16px; cursor: pointer ;">
+                    Заказать
+                       <img src="../images/sushi-button.png" 
+                       alt="Заказать" width="120">
+                    </button>
+                     </p>
+            </form>
+        </main>
+        <footer>
+           <p class="address">Наш адрес: ул. Зеленая, 17.</p>
+           <p class="copyright">© читатели книги.</p>
+        </footer>
+      </body>
+</html>
+
+    
